@@ -45,6 +45,25 @@
 
 
 		<div style="display: flex; flex-direction: column">
+      <div
+      style="
+      margin-top: 10px;
+      padding: 5px;
+      border: 3px solid black;
+      border-radius: 5px;
+
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      justify-content: center;
+      "
+    >
+    <div>
+      <p style="font-size: 40px;">Предварительно заходим на порт 58528 и входим чтобы создать каталог </p>
+    </div>
+      <img  src="enterScreen.png" alt="" />
+    </div>
 			<div
 			  style="
 				margin-top: 10px;
@@ -62,9 +81,28 @@
 			<div>
 			  <p style="font-size: 40px;">Через mkdir создаем каталог task2 </p>
 			</div>
-			  <img  src="server1.png" alt="" />
+			  <img  src="dddd.png" alt="" />
 			</div>
-
+      <div style="display: flex; flex-direction: column">
+				<div
+				  style="
+					margin-top: 10px;
+					padding: 5px;
+					border: 3px solid black;
+					border-radius: 5px;
+		
+					display: flex;
+					flex-direction: column;
+		
+					align-items: center;
+					justify-content: center;
+				  "
+				>
+				<div>
+				  <p style="font-size: 40px;">Через ls -a можем увидеть папку .ssh с SSH-ключами. В ней лежит публичный и приватный ключи </p>
+				</div>
+				  <img  src="keyScreen.png" alt="" />
+				</div>
 			<div style="display: flex; flex-direction: column">
 				<div
 				  style="
@@ -101,7 +139,10 @@
           "
         >
         <div>
-          <p style="font-size: 40px;">Получаем главную страницу методом GET в протоколе HTTP 1.0 </p>
+          <p style="font-size: 40px;">Получаем главную страницу методом GET в протоколе HTTP 1.0. <br/>
+            От HTTPS 1.1 он отличается тем, что в HTTPS 1.0 заголовок Host не является обязательным.<br/>
+             Также в HTTP 1.0 используются базовые методы (GET, POST, HEAD), <br/>
+             тогда как в  HTTP/1.1 добавлены новые методы, такие как PUT, DELETE, OPTIONS, TRACE </p>
         </div>
           <img  src="1.jpg" alt="" />
         </div>
@@ -136,9 +177,13 @@
             justify-content: center;
           "
         >
-        <p style="font-size: 40px;"> Определяем размер файла file.tar.gz, не скачивая его. Информация содержится в Content-length </p>
+      <p style="font-size: 40px;"> Определяем размер файла file.tar.gz, не скачивая его. <br/>
+          Метод HEAD в HTTP используется для получения только заголовков ответа без тела сообщения.<br/>
+          Сервер возвращает только заголовки ответа, включая Content-Length, который указывает размер файла.<br/>
+          Сам файл не передается.<br/>
+          Информация содержится в Content-length </p>
 
-          <img src="3.jpg" alt="" />
+          <img src="3update.jpg" alt="" />
         </div>
         <div
         style="
@@ -153,11 +198,10 @@
           justify-content: center;
         "
       >
-      <p style="font-size: 40px;">Определяем медиатип ресурса /image.png; 
-		Content-Type: text/html; charset=UTF-8
-Это означает, что содержимое является HTML (text/html), а кодировка символов — UTF-8. UTF-8 — это стандарт кодировки символов, который позволяет представлять широкий диапазон символов, что делает его подходящим для многоязычного контента. </p>
+      <p style="font-size: 40px;">4й номер. <br/>Медиатип — это информация о типе содержимого файла,
+         которая передается в заголовке HTTP-ответа Content-Type. <br/>Например, для файла image.png медиатип будет image/png.  </p>
 
-        <img src="4.jpg" alt="" />
+        <img src="4update.jpg" alt="" />
       </div>
       <div
       style="
@@ -172,7 +216,12 @@
         justify-content: center;
       "
     >
-    <p style="font-size: 40px;">Отправляем комментарий на сервер по адресу /index.php; </p>
+    <p style="font-size: 40px;">Отправляем комментарий на сервер по адресу /index.php. <br/>
+      POST — это HTTP-метод, который используется для отправки данных на сервер.<br/>
+       В отличие от GET, который запрашивает данные, POST передает данные в теле запроса.<br/>
+      Content-Type — это заголовок, который указывает тип данных, передаваемых в теле запроса.<br/>
+      application/x-www-form-urlencoded — это стандартный формат для передачи данных форм в HTTP-запросах. <br/>
+      Content-Length — это заголовок, который указывает размер тела запроса в байтах. </p>
 
       <img src="5.jpg" alt="" />
     </div>
@@ -207,9 +256,10 @@
     justify-content: center;
   "
 >
-<p style="font-size: 40px;">Определяем кодировку ресурса /index.php. </p>
+<p style="font-size: 40px;">Определяем кодировку ресурса /index.php. Получаем charset=UTF-8
+  — это стандарт кодировки символов, который позволяет представлять широкий диапазон символов, что делает его подходящим для многоязычного контента. </p>
 
-  <img src="7.jpg" alt="" />
+  <img src="7update.png" alt="" />
 </div>
     </main>
   </body>
